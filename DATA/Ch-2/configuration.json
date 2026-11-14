@@ -1,0 +1,108 @@
+{
+  "seed": 1234,
+  "split_products": {
+    "train": [
+      "ch2_iir_nci_20210112T0149187898_d_img_d32",
+      "ch2_iir_nci_20210112T0743064200_d_img_d32",
+      "ch2_iir_nci_20210113T0124245058_d_img_d32"
+    ],
+    "validation": [
+      "ch2_iir_nci_20210611T0437452422_d_img_d32"
+    ],
+    "test": [
+      "ch2_iir_nci_20210611T0833509470_d_img_d32"
+    ],
+    "extra_test": [
+      "ch2_iir_nci_20210612T0414261216_d_img_d32",
+      "ch2_iir_nci_20260908T0240355449_d_img_d18",
+      "ch2_iir_nci_20260908T0636269481_d_img_d18"
+    ]
+  },
+  "training_sampling_products": [
+    "ch2_iir_nci_20210112T0149187898_d_img_d32",
+    "ch2_iir_nci_20210112T0743064200_d_img_d32",
+    "ch2_iir_nci_20210113T0124245058_d_img_d32"
+  ],
+  "training_spatial_coverage": "full_extent_random_patch_origins",
+  "epochs_max": 50,
+  "steps_per_epoch": 2000,
+  "patch": 32,
+  "batch_size": 2,
+  "bands_processed": 256,
+  "display_bands": [
+    20,
+    75,
+    140,
+    210
+  ],
+  "learning_rate": 0.0002,
+  "width": 16,
+  "spatial_blocks": 4,
+  "state_size": 12,
+  "tile": 48,
+  "stride": 32,
+  "noise": {
+    "sigma_min": 0.01,
+    "sigma_max": 0.12,
+    "impulse_max": 0.005,
+    "column_probability": 0.06,
+    "stripe_std": 0.18
+  },
+  "torch_version": "2.14.0+cu132",
+  "numpy_version": "2.5.4",
+  "task": "added_synthetic_noise_restoration",
+  "train_model": true,
+  "pretrained_checkpoint": null,
+  "new_product_roles": {
+    "ch2_iir_nci_20210113T0124245058_d_img_d32": "train",
+    "ch2_iir_nci_20210612T0414261216_d_img_d32": "extra_test",
+    "ch2_iir_nci_20260908T0240355449_d_img_d18": "extra_test",
+    "ch2_iir_nci_20260908T0636269481_d_img_d18": "extra_test"
+  },
+  "product_screening": [
+    {
+      "product": "ch2_iir_nci_20210113T0124245058_d_img_d32",
+      "compatible": true,
+      "reason": "",
+      "lines": 55461,
+      "samples": 250,
+      "bands": 256,
+      "max_wavelength_difference_nm": 0.0,
+      "requested_role": "train",
+      "used": true
+    },
+    {
+      "product": "ch2_iir_nci_20210612T0414261216_d_img_d32",
+      "compatible": true,
+      "reason": "",
+      "lines": 55360,
+      "samples": 250,
+      "bands": 256,
+      "max_wavelength_difference_nm": 0.0,
+      "requested_role": "extra_test",
+      "used": true
+    },
+    {
+      "product": "ch2_iir_nci_20260908T0240355449_d_img_d18",
+      "compatible": true,
+      "reason": "",
+      "lines": 8821,
+      "samples": 250,
+      "bands": 256,
+      "max_wavelength_difference_nm": 0.0,
+      "requested_role": "extra_test",
+      "used": true
+    },
+    {
+      "product": "ch2_iir_nci_20260908T0636269481_d_img_d18",
+      "compatible": true,
+      "reason": "",
+      "lines": 8971,
+      "samples": 250,
+      "bands": 256,
+      "max_wavelength_difference_nm": 0.0,
+      "requested_role": "extra_test",
+      "used": true
+    }
+  ]
+}

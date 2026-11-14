@@ -1,0 +1,58 @@
+[
+  {
+    "mode": "identity",
+    "sigma": null,
+    "input_mse": 0.0,
+    "output_mse": 0.0003086460474150954,
+    "gain_db": null
+  },
+  {
+    "mode": "gaussian",
+    "sigma": 0.01,
+    "input_mse": 0.00010139879304915667,
+    "output_mse": 0.00031942230452841613,
+    "gain_db": -4.9833245303440075
+  },
+  {
+    "mode": "gaussian",
+    "sigma": 0.03,
+    "input_mse": 0.0009133373678196222,
+    "output_mse": 0.0004005582359241089,
+    "gain_db": 3.5796556077123793
+  },
+  {
+    "mode": "gaussian",
+    "sigma": 0.06,
+    "input_mse": 0.0036076743563171476,
+    "output_mse": 0.0006404663654393516,
+    "gain_db": 7.507310020274342
+  },
+  {
+    "mode": "gaussian",
+    "sigma": 0.1,
+    "input_mse": 0.01011613302398473,
+    "output_mse": 0.0011498289240989834,
+    "gain_db": 9.443813023638777
+  },
+  {
+    "mode": "impulse",
+    "sigma": null,
+    "input_mse": 0.0036015218356624246,
+    "output_mse": 0.0003400170353415888,
+    "gain_db": 10.249853758398352
+  },
+  {
+    "mode": "stripe",
+    "sigma": null,
+    "input_mse": 0.000675523491736385,
+    "output_mse": 0.00043612726767605636,
+    "gain_db": 1.9002721586451496
+  },
+  {
+    "mode": "mixed",
+    "sigma": null,
+    "input_mse": 0.009161536348983645,
+    "output_mse": 0.0009093423141166568,
+    "gain_db": 10.032409085972516
+  }
+]

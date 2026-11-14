@@ -1,0 +1,39 @@
+{
+  "name": "Center_Pixel",
+  "safe_name": "Center_Pixel",
+  "center_region_row_col": [
+    100,
+    100
+  ],
+  "bounds_region_r0_r1_c0_c1_exclusive": [
+    100,
+    101,
+    100,
+    101
+  ],
+  "bounds_source_r0_r1_c0_c1_exclusive": [
+    21062,
+    21063,
+    125,
+    126
+  ],
+  "actual_size": [
+    1,
+    1
+  ],
+  "aggregation": "Pixel spectrum",
+  "validity_policy": "Identical reference-valid pixels for original and denoised at each wavelength; counts may vary by wavelength",
+  "missing_bands": "NaN gaps; no interpolation, smoothing, clipping, or continuum removal",
+  "radiance_label": "Radiance",
+  "reference": "Original measured radiance before adding synthetic corruption; not established noise-free ground truth",
+  "method": "HLTVSG",
+  "region": {
+    "id": "test_ch2_iir_nci_20210611T0833509470_d_img_d32_01",
+    "split": "test",
+    "product": "ch2_iir_nci_20210611T0833509470_d_img_d32",
+    "first": 20962,
+    "last": 21162,
+    "left": 25,
+    "right": 225
+  }
+}

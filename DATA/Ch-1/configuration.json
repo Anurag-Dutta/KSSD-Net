@@ -1,0 +1,47 @@
+{
+  "seed": 1234,
+  "split_products": {
+    "train": [
+      "M3G20090622T042035_V01_RFL",
+      "M3G20090622T124051_V01_RFL"
+    ],
+    "validation": [
+      "M3G20090623T012541_V01_RFL"
+    ],
+    "test": [
+      "M3G20090623T182551_V01_RFL"
+    ]
+  },
+  "training_sampling_products": [
+    "M3G20090622T042035_V01_RFL",
+    "M3G20090622T124051_V01_RFL"
+  ],
+  "training_spatial_coverage": "full_extent_random_patch_origins",
+  "epochs_max": 50,
+  "steps_per_epoch": 2000,
+  "patch": 32,
+  "batch_size": 2,
+  "bands_processed": 85,
+  "display_bands": [
+    10,
+    30,
+    50,
+    70
+  ],
+  "learning_rate": 0.0002,
+  "width": 16,
+  "spatial_blocks": 4,
+  "state_size": 12,
+  "tile": 48,
+  "stride": 32,
+  "noise": {
+    "sigma_min": 0.01,
+    "sigma_max": 0.12,
+    "impulse_max": 0.005,
+    "column_probability": 0.06,
+    "stripe_std": 0.18
+  },
+  "torch_version": "2.14.0+cu132",
+  "numpy_version": "2.5.4",
+  "task": "added_synthetic_noise_restoration"
+}
